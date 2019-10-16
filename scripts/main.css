@@ -1,0 +1,238 @@
+@font-face {
+    font-family: fontTipis;
+    src:  url(../fonts/libel-suit-rg.ttf);
+}
+
+@font-face {
+    font-family: fontBiasa;
+    src:  url(../fonts/teen.ttf);
+}
+
+*{
+	font-family: fontBiasa;
+	box-sizing: border-box;
+}
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+#header{
+	padding: 10px;
+}
+
+#header img{
+	height: 80px;
+}
+
+#navbar {
+	z-index: 2;
+	overflow: hidden;
+	background: red;
+	background: linear-gradient(to bottom right, red, green);
+	box-shadow: 0px 0px 10px black;
+}
+
+#navbar a{
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 11px;
+	text-decoration: none;
+	font-size: 14px;
+	cursor: pointer;
+	font-family: fontBiasa!important;
+}
+
+#navbar a:hover{
+	text-shadow: 0px 0px 5px white;
+}
+
+#navbar #mn6{
+	float: right;
+}
+
+#hiddenNavbar{
+	background: red;
+	background: linear-gradient(to bottom right, red, green);
+	box-shadow: 0px 0px 10px black;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#sideMenu{
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	height: 400px;
+	width: 45px;
+	display: none;
+}
+
+.isiSideMenu{
+	height: 45px;
+	width: 45px;
+	border-radius: 10px;
+	text-align: center;
+	margin-bottom: 5px;
+	background-color: #00E9BA;
+	color: white;
+	padding-top: 2px;
+}
+
+.isiSideMenu:hover{
+	color: #0090FF;
+	background-color: lightgray;
+}
+
+a.navSide:hover{
+	color: #0090FF;
+	background-color: lightgray;
+}
+
+#sideMenuKanan{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	height: 250px;
+	width: 45px;
+	display: none;
+}
+
+a.navSide{
+	text-decoration: none;
+	color: white;
+}
+
+
+#main {
+	height: 80%; /* Used in this example to enable scrolling */
+	background-image: url("../picts/bglpjbos.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+@media screen and (max-width: 600px) {
+	
+	#navbar a{
+		width: 100%;
+		text-align: left;
+		border: 1px solid white;
+	}
+	
+	#navbar #mn6{
+		float: left;
+		width: 100%;
+		text-align: left;
+		border: 1px solid white;
+	}
+	
+	.sticky {
+		position: static;
+		top: 0;
+		width: 100%;
+	}
+	
+	#logo{
+		width: 100%;
+	}
+}
+
+.tblStyle{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	opacity:1;
+	box-shadow: 3px 3px 5px gray;
+}
+
+.tblStyle td, .tblStyle th{
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+.tblStyle tr:nth-child(even){background-color: #f2f2f2;}
+.tblStyle tr:nth-child(odd){background-color: white;}
+
+.tblStyle tr:hover {background-color: #ddd;}
+
+.tblStyle th{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
+
+.styleButton{
+	border: 1px solid transparent;
+	background-color: green;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+	width: 100px;
+	cursor: pointer;
+}
+.styleButton:hover:enabled {
+	background-color: darkgreen!important;
+	box-shadow: 3px 3px 4px gray!important;
+	font-weight: bold!important;
+}
+.styleButton:active:enabled{
+	background-color: darkred!important;
+	font-weight: bold!important;
+}
+
+.styleInput{
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	padding: 8px;
+	box-shadow: 0px 2px 1px gray;
+    resize: vertical;
+    box-sizing: border-box;
+   	font-size: 100%;
+}
+
+.styleLabel{
+	padding: 8px;
+	display: block;
+	box-sizing: border-box;
+}
+
+.styleInput:HOVER{
+	box-shadow: 0px 2px 2px gray;
+}
+
+.styleInput:FOCUS{
+	border: 1px solid lightgray;
+	box-shadow: 0px 2px 2px darkgreen;
+}
+
+.loadingGif{
+	width:125px;
+	height: 90px;
+	z-index:5;
+	position:fixed;
+	left:0; right:0;
+	top:0; bottom:0;
+	margin:auto;
+	display:none;
+}
+
+.loadingGif img{
+	width:125px;
+	height: 90px;
+}
+
+#logo:HOVER{
+	filter: invert(50%);
+	cursor: pointer;
+}
